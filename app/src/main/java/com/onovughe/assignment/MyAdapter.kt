@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 data class MyAdapter(private val context: Context, var image: Array<Int>,
-var name: Array<String>): BaseAdapter(){
+var name: Array<String>, var name3: Array<String>): BaseAdapter(){
     override fun getCount(): Int {
         return image.size
     }
@@ -34,6 +34,7 @@ var name: Array<String>): BaseAdapter(){
 
             viewHolder.name = view.findViewById(R.id.name1)
             viewHolder.image = view.findViewById(R.id.img)
+
 
             view!!.tag = viewHolder
         }else{
